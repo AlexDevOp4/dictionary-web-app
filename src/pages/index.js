@@ -6,9 +6,9 @@ import Search from "../../public/images/iconoir-search.svg";
 
 const IndexPage = () => {
   return (
-    <main className="h-[1065px] w-[375px] bg-white container mx-auto flex flex-col justify-around ">
+    <main className="h-[1065px] md:h-[1205px] w-[375px] md:w-[1440px] bg-white container mx-auto md:px-24 flex flex-col justify-around ">
       <div className="flex flex-row justify-between items-center pt-4 ">
-        <img src={Book} alt="book" className="w-7 h-8" />
+        <img src={Book} alt="book" className="w-7 h-8 md:ml-4" />
         <div className="flex flex-row items-center space-x-4 ">
           <p className="text-right text-sm leading-6 font-semibold">
             Sans Serif
@@ -19,10 +19,10 @@ const IndexPage = () => {
         </div>
       </div>
 
-      <div className="search-box w-[370px] h-12 shrink-0 rounded-2xl bg-[search-input] bg-gray-50 flex flex-row items-center">
+      <div className="search-box w-[370px] md:w-full h-12 shrink-0 rounded-2xl bg-[search-input] bg-gray-50 flex flex-row items-center md:justify-between">
         <input
           id="search-field"
-          className="w-80 h-12 py-0 pl-8 pr-0 text-black sm:text-sm bg-gray-50 rounded-2xl focus:outline-none"
+          className="w-80 md:w-full h-12 py-0 pl-8 pr-0 text-black sm:text-sm bg-gray-50 rounded-2xl focus:outline-none"
           placeholder="Search..."
           name="search"
         />
@@ -53,12 +53,12 @@ const IndexPage = () => {
 
       <div className="parts-of-speech flex flex-row justify-between items-center">
         <p className="italic font-[sans] pronoun">noun</p>
-        <div className="line border w-80 h-0 border-slate-100"></div>
+        <div className="line border w-80 h-0 border-slate-100 md:w-[750px]"></div>
       </div>
 
       <div className="meaning-section container">
         <p className=" pb-4">Meaning</p>
-        <div className="meaning-list mx-auto">
+        <div className="meaning-list w-[302px] mx-auto md:w-[750px]">
           <ul>
             <li className="first-li">
               (etc.) A set of keys used to operate a typewriter, computer etc.
@@ -77,14 +77,19 @@ const IndexPage = () => {
         </div>
       </div>
 
+      <div className="synonyms flex flex-row space-x-5">
+        <p className="text-light-grey">Synonyms</p>
+        <p className="text-light-purple font-bold">electronic keyboard</p>
+      </div>
+
       <div className="parts-of-speech flex flex-row justify-between items-center">
         <p className=" font-[sans] ">verb</p>
-        <div className="line border w-80 h-0 border-slate-100"></div>
+        <div className="line border w-80 h-0 border-slate-100 md:w-[750px]"></div>
       </div>
 
       <div className="meaning-section container">
         <p className="pb-4">Meaning</p>
-        <div className="meaning-list mx-auto">
+        <div className="meaning-list mx-auto w-[302px] md:w-[750px]">
           <ul>
             <li className="first-li">To type on a computer keyboard.</li>
             <li className="quote py-4">
@@ -96,9 +101,9 @@ const IndexPage = () => {
 
       <div className="line border w-full h-0 border-slate-100"></div>
 
-      <div className="source pb-8 pl-2">
+      <div className="source pb-8 pl-2 flex space-x-5">
         <p>Source</p>
-        <div className="source-link flex flex-row align-middle items-center  space-x-2">
+        <div className="source-link flex flex-row  align-middle items-center  space-x-2">
           <a>https://en.wiktionary.org/wiki/keyboard</a>
           <svg
             xmlns="http://www.w3.org/2000/svg"

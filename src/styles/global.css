@@ -11,6 +11,8 @@
   line-height: normal;
 }
 
+
+
 .source > p {
   color: var(--757575, #757575);
   font-feature-settings: "clig" off, "liga" off;
@@ -62,7 +64,6 @@
 }
 
 .meaning-section > .meaning-list {
-  width: 302px;
   color: var(--2-d-2-d-2-d, #2d2d2d);
   font-family: Lora;
   font-size: 15px;
